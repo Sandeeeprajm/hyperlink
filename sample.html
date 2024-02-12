@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <script src="sample.js"></script>
+  </head>
+
+  <style>
+    ._im2ucl {
+      color: rgb(34, 102, 227) !important;
+      background-color: transparent !important;
+      border-style: none !important;
+      cursor: pointer !important;
+      font-family: "Segoe UI", tahoma, sans-serif !important;
+      font-size: 14px !important;
+      font-weight: normal !important;
+      line-height: 21px !important;
+      min-height: 30px !important;
+      padding-left: 4px !important;
+      padding-right: 4px !important;
+      padding-bottom: 0px !important;
+      text-overflow: ellipsis !important;
+      min-width: 0px !important;
+      text-align: left !important;
+      order: 0 !important;
+      flex: 1 1 0% !important;
+      align-self: auto !important;
+      font-style: normal !important;
+    }
+  </style>
+
+  <body>
+    <div>
+      <input
+        id="inputz"
+        onclick="{myFunction()}"
+        onkeydown="{myFunction2()}"
+        readonly
+        role="textbox"
+        type="text"
+        aria-invalid="false"
+        aria-label="Purchase order"
+        class="dyn-field dyn-hyperlink _im2ucl"
+        value="000039"
+        data-dyn-savedtooltip="000034
+
+    Click to follow link"
+        placeholder=""
+        title="000034
+    
+    Click to follow link"
+      />
+    </div>
+
+    <!-- <p  id="inputz" onclick={myFunction()}> hai </p> -->
+    <script>
+      // function myFunction() {
+      //     console.log("gjbk");
+      //   document.getElementById("inputz").innerHTML = "YOU CLICKED ME!";
+      // }
+      function myFunction() {
+        var s = document.getElementById("inputz");
+        if (s === document.activeElement) {
+          console.log("Element has focus!");
+        } else {
+          console.log(`Element is not focused.`);
+        }
+
+        var sa = document.getElementById("inputz").value;
+        sa = sa;
+        console.log(sa);
+        console.log("clicked");
+      }
+
+      function myFunction2() {
+        alert("success");
+      }
+    </script>
+  </body>
+</html>
